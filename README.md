@@ -14,16 +14,16 @@ You'll need to include forecast.js in your app directory, and change the apiKey 
 var apiKey = "YOUR_FORECAST_IO_KEY_GOES_HERE";
 ```
 
-Next, set up an app.js file, import forecast.js, and customize the functionality to meet your needs. This example of the app.js file gets the forecast for each zip code provided in the command line call:\
+Next, set up an app.js file, import forecast.js, and customize the functionality to meet your needs. This example of the app.js file gets the forecast for each zip code provided in the command line call:
 ```js
 var forecast = require("./forecast");
 var zipcodes = process.argv.slice(2);
-zipcodes.forEach(forecast.get)
+zipcodes.forEach(forecast.get);
 ```
 
-To run the app, navigate to the directory in the command line and then type the following:\
+To run the app, navigate to the directory in the command line and then type the following:
 ```sh
-node app.js 10001 94101 60290 96802\
+node app.js 10001 94101 60290 96802
 ```
 
 
